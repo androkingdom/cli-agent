@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cli-agent"
+version = "0.1.0"
+description = "CLI agent with pluggable tools"
+readme = "README.md"
+authors = [{ name="Andro", email="androkingdom1@gmail.com" }]
+dependencies = ["rich", "openai", "python-dotenv"]
+
+[project.scripts]
+cli-agent = "cli_agent.main:main"
