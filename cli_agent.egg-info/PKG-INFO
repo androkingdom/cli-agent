@@ -1,9 +1,0 @@
-Metadata-Version: 2.4
-Name: cli-agent
-Version: 0.1.0
-Summary: CLI agent with pluggable tools
-Author-email: Andro <androkingdom1@gmail.com>
-Description-Content-Type: text/markdown
-Requires-Dist: rich
-Requires-Dist: openai
-Requires-Dist: python-dotenv
