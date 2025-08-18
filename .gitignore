@@ -30,6 +30,6 @@ build/
 # Environment files (if you want to keep them secret)
 .env
 
-# Python packaging
+# Python package metadata
 *.egg-info/
-
+cli_agent.egg-info/
