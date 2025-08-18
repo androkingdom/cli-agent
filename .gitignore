@@ -29,3 +29,7 @@ build/
 
 # Environment files (if you want to keep them secret)
 .env
+
+# Python packaging
+*.egg-info/
+
