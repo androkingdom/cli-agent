@@ -14,6 +14,8 @@ license-files = ["LICENSE"]
 dependencies = [
   "rich",
 ]
+[project.scripts]
+  andro-cli = "cli_agent.main:app"
 
 [project.urls]
 "Homepage" = "https://github.com/andro-dev/cli-agent"

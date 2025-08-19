@@ -52,22 +52,18 @@ pip install py-cli-agent
 Run from the terminal:
 
 ```bash
-py-cli-agent
->>
+andro-cli
 ```
 
 If no API key is found in your environment, the tool will prompt for it
 and save it in your home directory: `~/.cli_agent_config.json`.
 
 ---
+## 🛠️ Features
 
-## 🔥 Example
-
-```bash
-py-cli-agent
-```
-
----
+- Interact with Gemini AI models directly from your terminal
+- Easy API key management
+- Rich output formatting
 
 ## 📄 License
 
