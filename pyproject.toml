@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "py-cli-agent"
-version = "0.1.2"
+version = "0.1.3"
 description = "A CLI Agent powered by Gemini AI"
 readme = "README.md"
 authors = [
@@ -15,7 +15,8 @@ dependencies = [
   "rich",
 ]
 [project.scripts]
-  andro-cli = "cli_agent.main:app"
+  andro-cli = "cli_agent.main:main"
+
 
 [project.urls]
 "Homepage" = "https://github.com/andro-dev/cli-agent"
