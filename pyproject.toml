@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "py-cli-agent"
-version = "0.1.3"
+version = "0.1.4"
 description = "A CLI Agent powered by Gemini AI"
 readme = "README.md"
 authors = [
@@ -12,7 +12,9 @@ authors = [
 ]
 license-files = ["LICENSE"]
 dependencies = [
+  "openai",
   "rich",
+  "python-dotenv"
 ]
 [project.scripts]
   andro-cli = "cli_agent.main:main"
