@@ -9,10 +9,10 @@ Interact with Gemini models directly from your terminal.
 
 ## ⚠️ Requirements
 
-- Python **3.9+**
+- Python
 - A valid **`GEMINI_API_KEY`**
 
-Set your `GEMINI_API_KEY` before use:
+Either set your `GEMINI_API_KEY` by using:
 
 **Linux / macOS:**
 
@@ -24,6 +24,17 @@ export GEMINI_API_KEY="your_api_key_here"
 
 ```powershell
 $env:GEMINI_API_KEY="your_api_key_here"
+```
+
+Or pass it on the command line:
+
+```bash
+$ python -m cli_agent.main
+Enter your Gemini API key: <your_api_key_here>
+✅ API key saved to C:\Users\andro\.cli_agent_config.json
+Using API key: <your_api_key_here>****
+>>
+
 ```
 
 ---
@@ -42,11 +53,6 @@ Run from the terminal:
 
 ```bash
 py-cli-agent
-✅ Using API key from environment variable
-Using API key: AIz*****
->> hi
-Step: OUTPUT
-✅ Output: Hello! How can I help you?
 >>
 ```
 
