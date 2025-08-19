@@ -1,14 +1,20 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
+requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cli-agent"
-version = "0.1.0"
-description = "CLI agent with pluggable tools"
+name = "py-cli-agent"
+version = "0.1.1"
+description = "A CLI Agent powered by Gemini AI"
 readme = "README.md"
-authors = [{ name="Andro", email="androkingdom1@gmail.com" }]
-dependencies = ["rich", "openai", "python-dotenv"]
+authors = [
+  { name="Andro", email="androkingdom1@gmail.com" }
+]
+license-files = ["LICENSE"]
+dependencies = [
+  "rich",
+]
 
-[project.scripts]
-cli-agent = "cli_agent.main:main"
+[project.urls]
+"Homepage" = "https://github.com/andro-dev/cli-agent"
+"Bug Tracker" = "https://github.com/andro-dev/cli-agent/issues"

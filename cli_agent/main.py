@@ -1,21 +1,17 @@
 from dotenv import load_dotenv
 import os
-
-load_dotenv()
-gemini_api_key = os.getenv("GEMINI_API_KEY")
-
-if not gemini_api_key:
-    raise ValueError("API key not found. Set GEMINI_API_KEY environment variable.")
-
-
 from openai import OpenAI
 import json
 from rich.console import Console
 from rich.panel import Panel
-
 from cli_agent.tools import Tools
+from cli_agent.get_api_key import get_api_key
 
+load_dotenv()
 console = Console()
+
+if gemini_api_key := get_api_key():
+    console.print(f"Using API key: [cyan]{gemini_api_key[:4]}****[/cyan]")
 
 availableTools = {
     # file operations
