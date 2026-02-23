@@ -34,3 +34,5 @@ build/
 *.egg-info/
 
 memory-bank/
+
+.secrets/

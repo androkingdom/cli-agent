@@ -1,11 +1,13 @@
 # andro-cli
 
-[![PyPI version](https://img.shields.io/pypi/v/andro-cli.svg)](https://pypi.org/project/andro-cli/)
+[![PyPI version](https://img.shields.io/pypi/v/androincli.svg)](https://pypi.org/project/androincli/)
 
 An AI-powered CLI agent built on **Google's Gemini API** with a beautiful **Textual TUI**.  
 Chat with an AI assistant directly from your terminal — with file operations, command execution, and more.
 
 ---
+> **DANGER:** This tool executes shell commands and file operations based are done on local machine. Use with caution and only check the source code.
+
 
 ## ⚠️ Requirements
 
@@ -17,13 +19,13 @@ Chat with an AI assistant directly from your terminal — with file operations, 
 ## 📦 Installation
 
 ```bash
-pip install andro-cli
+pip install androincli
 ```
 
 Or with `uv`:
 
 ```bash
-uv tool install andro-cli
+uv tool install androincli
 ```
 
 ---
@@ -31,7 +33,7 @@ uv tool install andro-cli
 ## 🚀 Usage
 
 ```bash
-andro-cli
+andro
 ```
 
 ## Config is stored in `~/.cli_agent/config.json`:
@@ -89,8 +91,8 @@ Once launched, you'll see a full-screen chat interface:
 │  Creating hello.txt...                                                │
 │                                                                       │
 ├───────────────────────────────────────────────────────────────────────┤
-│ Type a message... (Enter to send, Ctrl+X to quit)      [Send ↵]      │
-└──────────[Ctrl+X] Quit  [Ctrl+L] Clear  [Esc] Focus Input────────────┘
+│ Type a message... (Enter to send, Ctrl+q to quit)      [Send ↵]      │
+└──────────[Ctrl+q] Quit  [Ctrl+L] Clear  [Esc] Focus Input────────────┘
 ```
 
 ### Keybindings
@@ -98,7 +100,7 @@ Once launched, you'll see a full-screen chat interface:
 | Key | Action |
 |-----|--------|
 | `Enter` | Send message |
-| `Ctrl+X` | Quit |
+| `Ctrl+q` | Quit |
 | `Ctrl+L` | Clear chat |
 | `Escape` | Focus input |
 
