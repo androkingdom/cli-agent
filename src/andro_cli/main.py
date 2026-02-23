@@ -5,7 +5,6 @@ from rich.console import Console
 from rich.prompt import Prompt
 
 from andro_cli.agent.config import get_api_key, save_api_key
-from andro_cli.ui.app import AgentApp
 
 console = Console()
 
@@ -55,6 +54,7 @@ def main() -> int:
     console.print()
 
     # Launch TUI
+    from andro_cli.ui.app import AgentApp
     app = AgentApp()
     app.run()
     return 0

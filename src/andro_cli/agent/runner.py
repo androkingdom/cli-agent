@@ -8,7 +8,7 @@ from agents.extensions.memory import AdvancedSQLiteSession
 from andro_cli.agent.config import get_api_key, load_agent_instructions, ensure_config_dir, get_session_file
 
 BASE_URL = os.getenv("EXAMPLE_BASE_URL") or "https://generativelanguage.googleapis.com/v1beta/openai/"
-API_KEY = get_api_key() or ""
+API_KEY = get_api_key()
 MODEL_NAME = os.getenv("EXAMPLE_MODEL_NAME") or "gemini-2.5-flash-lite"
 
 if not API_KEY:
@@ -35,7 +35,6 @@ class AgentService:
         from .tools import files
         fs = files.SecureFileSystem(root=Path.cwd())
         file_tools = files.build_file_tools(fs)
-
 
                 
         self.session = AdvancedSQLiteSession(
