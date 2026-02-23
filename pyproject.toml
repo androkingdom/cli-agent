@@ -1,25 +1,27 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "py-cli-agent"
-version = "0.1.4"
+name = "androincli"
+version = "0.1.5"
 description = "A CLI Agent powered by Gemini AI"
 readme = "README.md"
+requires-python = ">=3.10"
 authors = [
-  { name="Andro", email="androkingdom1@gmail.com" }
+    { name = "Andro", email = "androkingdom1@gmail.com" }
 ]
-license-files = ["LICENSE"]
+license = { text = "MIT" }
 dependencies = [
-  "openai",
-  "rich",
-  "python-dotenv"
+    "openai>=1.0.0",
+    "rich>=13.0.0",
+    "textual>=0.100.0",
+    "python-dotenv>=1.0.0",
+    "openai-agents>=0.9.1",
 ]
+
 [project.scripts]
-  andro-cli = "cli_agent.main:main"
+andro = "andro_cli.main:main"
 
-
-[project.urls]
-"Homepage" = "https://github.com/andro-dev/cli-agent"
-"Bug Tracker" = "https://github.com/andro-dev/cli-agent/issues"
+[tool.setuptools.packages.find]
+where = ["src"]

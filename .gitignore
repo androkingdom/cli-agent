@@ -32,4 +32,5 @@ build/
 
 # Python package metadata
 *.egg-info/
-cli_agent.egg-info/
+
+memory-bank/
